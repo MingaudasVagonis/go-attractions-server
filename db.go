@@ -166,6 +166,9 @@ func commitAttractionsToDB(url string, attractions []Attraction) error {
 
 	stmt := fmt.Sprintf("INSERT INTO destinations (id, category, description, location, copyright) VALUES %s", strings.Join(values, ","))
 	_, err := connection.Exec(stmt, args...)
+	
+	// Clearing cache
+	connection.Exec("DELETE FROM destinations")
 
 	return err
 }
