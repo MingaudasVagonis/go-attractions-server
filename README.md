@@ -1,7 +1,7 @@
 # REST API, database & image handling in go
 
 REST API used to help populate sqlite database with attractions in Lithuania.
-The program also handles images from an url.
+The program also handles images from an url.Used with [frontend](https://github.com/MingaudasVagonis/vue-attractions-front).
 
  - [**Retrieving data & images**](#retrieving-data-and-images)  
  - [**API**](#api)  
